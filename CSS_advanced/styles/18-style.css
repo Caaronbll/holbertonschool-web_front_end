@@ -149,7 +149,7 @@ a:active {
 }
 
 .nav .nav-link:hover {
-    color: var(--item-link-hover)
+    color: var(--item-link-hover);
 }
 
 .footer {
