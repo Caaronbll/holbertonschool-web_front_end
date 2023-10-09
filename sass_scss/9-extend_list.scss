@@ -1,10 +1,15 @@
 /* Extended */
 
-&.info {
-    font-size: 12px;
-    &.success {
-        color: #00FF00; }
-    &.warning {
-        color: #FF0000;
-    }
+.info {
+  font-size: 12px;
+}
+
+.success {
+    @extend .info;
+    color: #00ff00;
+}
+
+.warning {
+    @extend .info;
+    color: #ff0000;
 }
