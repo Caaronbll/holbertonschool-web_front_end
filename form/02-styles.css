@@ -671,7 +671,7 @@
       margin: 0;
     }
 
-    .feildset {
+    .fieldset {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
