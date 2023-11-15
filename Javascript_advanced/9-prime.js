@@ -1,13 +1,23 @@
 function countPrimeNumbers() {
-    let primeCounter = 0;
-    for (let i = 2; i <= 100; i++) {
-        if (i % 2 != 0 && i % 3 != 0) {
-            primeCounter += 1;
-        };
-    };
-    return primeCounter;
-};
+    let counter = 0, numerator, denominator;
 
-const start = performance.now();
+    for (numerator = 2; numerator <= 100; numerator++) {
+        let prime = true;
+        for (denominator = 2; denominator < numerator; denominator++) {
+            if (numerator % denominator == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            counter++;
+        }
+    }
+    console.log(counter);
+    return counter;
+}
+
+let start = performance.now();
 countPrimeNumbers();
-const end = performance.now();
+let end = performance.now();
+console.log(`Execution time of printing countPrimeNumbers was ${end - start} milliseconds.`);
