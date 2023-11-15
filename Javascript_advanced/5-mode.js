@@ -18,19 +18,18 @@ function main() {
     document.body.appendChild(paragraph);
 
     let spookyButton = document.createElement('button');
-    let darkModeButton = document.createElement('button');
-    let screamModeButton = document.createElement('button');
-
     spookyButton.textContent = 'Spooky';
     spookyButton.addEventListener('click', spooky);
     document.body.appendChild(spookyButton);
 
-    spookyButton.textContent = 'Dark Mode';
-    spookyButton.addEventListener('click', darkMode);
+    let darkModeButton = document.createElement('button');
+    darkModeButton.textContent = 'Dark Mode';
+    darkModeButton.addEventListener('click', darkMode);
     document.body.appendChild(darkModeButton);
 
-    spookyButton.textContent = 'Scream Mode';
-    spookyButton.addEventListener('click', screamMode);
+    let screamModeButton = document.createElement('button');
+    screamModeButton.textContent = 'Scream Mode';
+    screamModeButton.addEventListener('click', screamMode);
     document.body.appendChild(screamModeButton);
 };
 
